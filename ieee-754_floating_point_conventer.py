@@ -1,5 +1,4 @@
 import struct
-
 from bitstring import BitArray
 from numpy import single
 
@@ -43,6 +42,9 @@ class bin2single_conversion:
 
     def get_single(self):
         return self.__s_value
+
+    def get_hex(self):
+        return hex(int(self.__b_value, base=2))
 
     def chbit(self, nbit, value: bool):
         binary_representation = struct.pack('!f', self.__s_value)
@@ -97,6 +99,7 @@ if "__main__" == __name__:
     value = bin2single_conversion(s_value=single_value)
     bin_value = value.get_bin()
     print(f'{bin_value=}')
+    print(f'hex_value={value.get_hex()}')
     print('\n+1')
     value.add_min()
     print(f'\tvalue+little={value.get_single()}')
