@@ -14,10 +14,10 @@ def input_num(text: str):
 
 class bin2single_conversion:
     def __init__(self, s_value=None, b_value=None):
-        if s_value:
+        if s_value is not None:
             self.__s_value = single(s_value)
             self.__conv2bin()
-        elif b_value:
+        elif b_value is not None:
             self.__b_value = str(b_value)
             self.__conv2single()
         else:
@@ -29,6 +29,8 @@ class bin2single_conversion:
         binary_representation = struct.pack('!f', self.__s_value)
         # Преобразовать байты в строку из нулей и единиц (бинарное представление)
         self.__b_value = ''.join(f'{byte:08b}' for byte in binary_representation)
+        for _ in range(32 - len(self.__b_value)):
+            self.__b_value = '0' + self.__b_value
 
     def __conv2single(self):
         # Преобразовать двоичную строку обратно в байты
@@ -74,9 +76,9 @@ class bin2single_conversion:
         sign = int(self.__b_value[0])
         # positive
         if sign == 0:
-            if value == 0:
+            if value - loop < 0:
                 sign = 1
-                value = loop
+                value = loop-value
             else:
                 value -= loop
         # negative
