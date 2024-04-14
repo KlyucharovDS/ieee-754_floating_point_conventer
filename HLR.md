@@ -2,7 +2,7 @@
 
 ## Number range requirements
 
-`requirements for computing equivalent class values)`
+`requirements for computing equivalent class values`
 
 1. The application shall receive and performed input numbers in range from -3.40282346639e+38 (min) to 3.40282346639e+38(max) inclusive (**equivalent class** or **range of acceptable values**). 
 
@@ -56,6 +56,4 @@
 ## Behavior then input values are out of the range (non-condition)
 
 1. If you enter numbers that are outside the acceptable values, the application converts the values of those numbers to the nearest acceptable number.
-2. При выполнении операций преобразования,с результатом выходящим за диапазон допустимых значений, результат **должен** быть преобразован приложением в максимально приближенное значение числа в допустимом диапазоне значений. Истинное число должно быть отображено пользователю.
-
-If conversion operation is performed  with outside a acceptable values result, the application shall convert the result to to the nearest acceptable number. Natural number shall be displayed to user.
+2. If conversion operation is performed  with outside a acceptable values result, the application shall convert the result to to the nearest acceptable number. Natural number shall be displayed to user.
