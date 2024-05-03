@@ -18,7 +18,7 @@
    
    * integer (123456)
    
-   * float point number (single precision) (1.123456789)
+   * float point number (single and double precision) (1.123456789)
    
    * binary (0b0111_0110)
 
@@ -57,3 +57,4 @@
 
 1. If you enter numbers that are outside the acceptable values, the application converts the values of those numbers to the nearest acceptable number.
 2. If conversion operation is performed  with outside a acceptable values result, the application shall convert the result to to the nearest acceptable number. Natural number shall be displayed to user.
+3. The application shall display following error message when it receiving data with an unsupported data type: "ERROR! You are entering data in unsupported format.  The application accept data in integer, float point and binary format."    
