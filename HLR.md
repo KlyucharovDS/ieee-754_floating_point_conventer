@@ -22,7 +22,7 @@
    
    * binary (0b0111_0110)
 
-2. The application shall transform received single precision number in decimal representation to binary representation in string format.
+2. The application shall transform received number to binary representation in string format.
 
 3. The application should transform received number to single precision number.
 
