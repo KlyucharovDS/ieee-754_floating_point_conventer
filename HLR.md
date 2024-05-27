@@ -24,7 +24,7 @@
 
 2. The application shall transform received number to binary representation in string format.
 
-3. The application should transform received number to single precision number.
+3. The application shall transform received number to single precision number.
 
 ## Data conversion
 
