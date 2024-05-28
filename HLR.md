@@ -20,7 +20,7 @@
    
    * float point number (single and double precision) (1.123456789)
    
-   * binary (0b0111_0110)
+   * binary (0b0_01111111_00011111100110101101111 = 1.123456789)
 
 2. The application shall transform received number to binary representation in string format.
 
