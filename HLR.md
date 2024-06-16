@@ -6,11 +6,11 @@
 
 1. The application shall receive and performed input numbers in range from -3.40282346639e+38 (min) to 3.40282346639e+38(max) inclusive (**equivalent class** or **range of acceptable values**). 
 
-2. The least positive number that can be processed by the application is 1.40129846432e-45.
+2. The least positive number that shall processed by the application is 1.40129846432e-45.
    
    Number format and processing are performed in accordance with the IEEE-754 standard.
 
-3. The biggest negative number that can be processed by the application is -1.40129846432e-45. Number format and processing are performed in accordance with the IEEE-754 standard.
+3. The biggest negative number that shall processed by the application is -1.40129846432e-45. Number format and processing are performed in accordance with the IEEE-754 standard.
 
 ## Data type conversion
 
